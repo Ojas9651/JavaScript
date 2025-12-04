@@ -1,0 +1,101 @@
+JS made in 10 days by Brendan Eich in May 1995.
+
+Variables and DataTypes
+
+let var_name = "Name";
+console.log(var_name);
+
+Run - node.script.js
+
+let age = 20;
+console.log(name, age);
+
+age = 30; // age will become 30 
+
+const account = 1;
+account = 2; //Can't change the value for const it is the final value
+
+let and const are latest
+
+We early used the var. So what is the difference between let and var ?
+
+Problems with Var -
+
+var can be declared many times and let can be declared only once.
+
+let - declare value can change value
+var - can be declared many times
+const - can be declared and initialized only once and value should be initialized while declaration.
+
+One more problem with var -
+
+if(true){
+	var a = 20;
+}
+console.log(a);
+
+Output - 20 // It will print the value even if declared in local scope
+
+Data Types -
+
+
+Primitive Data Types
+Non Primitive Data Types
+
+Primitive - 7 types - immutable data types, pass by value
+
+	number (8 bytes) - 1,2,3,4 (no need to define the type)
+	string (8 bytes) - Rohit
+	boolean - true or false
+	undefined - when no value assigned
+	null - we assign that there is no value
+	bigint - 2323423423525235n
+	symbol -
+	const id1 = Symbol("id");
+
+Non Primitive - Mutable data types, pass by refrence
+
+	array
+	object
+	function
+
+Array -
+	let arr = [1,2,3,"name",false];
+
+Object - Foundation hai ye 
+	these are key:value pairs
+
+	let obj = {
+		name:"name";
+		account:12345;
+		age:18;
+		}
+
+Function -
+
+	let fn = function printName(){
+		console.log("name");
+	}
+
+Fun fact - in JavaScript we can store a function in a variable
+
+
+to check the type of any data that you stored use -
+
+console.log(typeof(variable_name)); // console.log(typeof a);
+
+let weather = null;
+console.log(typeof weather); // Output: object
+
+It is a bug in JS that type of null shows object
+
+In JS arrays are objects
+
+type of function shows function but it is object
+
+
+
+
+
+
+
