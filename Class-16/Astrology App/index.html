@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actrology App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="parent">
+        <h1>Astrology Insight</h1>
+        <form id="form">
+            <label for="fname">First Name:</label>
+            <br>
+            <input type="text" id="fname" name="fnamee">
+            <br><br>
+            <label for="lname">Last Name:</label>
+            <br>
+            <input type="text" id="lname" name="lname">
+            <br><br>
+            <label for="day">Date:</label>
+            <br>
+            <input type="number" id="day" name="day" min="1" max="31">
+            <br><br>
+            <label for="month">Month:</label>
+            <br>
+            <input type="number" id="month" name="month" min="1" max="12">
+            <br><br>
+            <label for="year">Year:</label>
+            <br>
+            <input type="number" id="year" name="year" min="1900" max="2025">
+            <br><br>
+            <button type="submit">Get Insights</button>
+        </form>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
