@@ -1,0 +1,51 @@
+Why JS is single threaded and synchronous ? 
+
+JS is a Single Threaded Synchronous language
+
+Means - Ki ek baar me ek hi task chl ra hoga 
+
+Like -  console.log("first");
+        console.log("first");
+        console.log("first");
+
+Uppr ke example me pehle first print hoga then second and then third na ki parellel me sare chl rae honge
+
+Example - Google search button doesnt work if a loop is running
+
+---------------------------
+
+console.log("first");
+setTimeout(()=>{
+        console.log("Timout Executed");
+},5000);
+console.log("second");
+
+Output -
+
+first
+second
+Timout Executed //After 5 seconds
+
+----------------------------------------
+
+By the above example we can see that there is someone else that looks the async task that when to complete as JS is synchronous
+
+Web Api - looks for async task and it is multithreaded
+
+        console.log    
+        AOM Api 
+        fetch
+        local storage
+        location
+        setInterval / setTimeout
+
+JS just runs the synchronous task and send the Async task to web api
+
+Event loop - keep checking it call stack is empty
+            checks if call stack is empty
+            takes data from callback queue and put in call stack
+
+all fetch calls go to microtask queue and its priority is high than the callback queue 
+
+event loop gives priority to microtask queue
+
